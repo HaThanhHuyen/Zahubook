@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#wrapper {
+height: 850px;
+  display: flex;
+  background: linear-gradient(#ffffff 0%, #c263cf 100%);
+}
+.rectangle {
+  background-color: #f1e0f7;
+  z-index: 1;
+  width: 1300px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.header {
+  display: flex;
+  margin-left: 430px;
+  height: 65px;
+  margin-top: 12px;
+}
+.header img {
+  height: 60px;
+  width: 60px;
+}
+h1 {
+  margin-left: 20px;
+  margin-top: 12px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.background {
+  height: 70%;
+  text-align: start;
+  display: flex;
+}
+.background img {
+  height: 723px;
+  width: 1300px;
+  position: absolute;
+}
+.form {
+  width: 500px;
+  height: 700px;
+  background-color: #fffafaf2;
+  opacity: 0.9;
+  z-index: 0;
+  border-radius: 30px;
+  margin-left: 750px;
+  margin-top: 16px;
+}
+.form img {
+  width: 350px;
+  height: 80px;
+
+  margin-left: 110px;
+}
+.form p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 67px;
+  color: #000000;
+}
+label {
+  color: #6a028f;
+}
+.SignUp {
+  margin-left: 20px;
+}
+.SignUp_input {
+  width: 450px;
+  height: 36px;
+  color: #ffffff;
+  border: 1px solid #bf39d6;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.button_radio {
+  display: flex;
+  justify-content: space-around;
+}
+.button_radio input {
+  border: 1px solid #bf39d6;
+  width: 30px;
+}
+.calendar input {
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 36px;
+  color: #bf39d6;
+  border: 1px solid #bf39d6;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.change_to_signIn {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  color: #554766;
+  
+}
+.change_to_signIn span{
+  color:#9387A8 ;
+}
+.checkbox {
+  color: #9387a8;
+  height: 15px;
+  width: 15px;
+}
+
+.input_checkbox {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.term_policy span {
+  font-weight: 700;
+  color:#554766;
+}
+
+.term_policy {
+  font-weight: 400;
+  color: #9387A8;
+  margin-top: -5px;
+}
+.btn_wrapper {
+  display: flex;
+  gap: 10px;
+}
+.submit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn_wrapper button {
+  justify-content: center;
+  align-items: center;
+  width: 462px;
+  height: 50px;
+  background: #9453ff;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+}
+::placeholder{
+  margin-left: 20px;
+}
