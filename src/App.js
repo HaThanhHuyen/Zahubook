@@ -6,11 +6,12 @@ import SignIn from './pages/signIn/signIn'
 import ForgotPassword from './pages/forgotPassword/forgotPassword';
 import NewPassword from './pages/newPassword/newPassword';
 import { Routes, Route } from "react-router-dom";
-// import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer theme ='colored'></ToastContainer>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />

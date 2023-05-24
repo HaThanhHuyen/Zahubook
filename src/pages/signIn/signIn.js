@@ -3,11 +3,42 @@ import logo1 from "../../images/logo.png";
 import background from "../../images/miximeo.png";
 import styles from "../signIn/signIn.module.css";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
-// import axios from "axios";
-// import useLogicLogin from "./useLogicLogin";
+import { useState } from "react";
+import {useHistory} from 'react-router-dom';
+// import { useEffect, useState } from "react";
+import React from "react";
+import { useNavigate  } from 'react-router-dom';
+import axios from "axios";
+// import useLogicLogin from "../signIn/useLogicSignIn";
 
 function SignIn() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const navigate = useNavigate();
+  console.log({ email, password })
+  const handleEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value)
+  }
+
+  const handleApi = () => {
+    console.log({ email, password })
+    axios.post('https://zahobook-server-minhdev-ui.vercel.app/api/login', {
+      email: email,
+      password: password
+    }).then(result => {
+      console.log(result.data)
+      alert('success')
+      navigate('/');
+    })
+      .catch(error => {
+        alert('service error')
+        console.log(error)
+      })
+  }
   return (
     <>
       <div id={styles.wrapper}>
@@ -28,6 +59,8 @@ function SignIn() {
                   className={styles.SignUp_input}
                   type="email"
                   placeholder="Your Email"
+                  onChange={handleEmail}
+                  required
                 />
                 <br />
                 <label htmlFor="password">Password</label>
@@ -36,24 +69,25 @@ function SignIn() {
                   className={styles.SignUp_input}
                   type="password"
                   placeholder="Your Password"
+                  onChange={handlePassword}
+                  required
                 />
                 <br />
                 <div className={styles.btn_wrapper}>
                   <button
                     type="button"
-                    onClick={onsubmit}
                     className={styles.submit}
+                    onClick={handleApi}
                   >
                     Create Account
                   </button>
                 </div>
                 <div className={styles.forgot_psw}>
-                  <Link to ="/forgotPassword">Forgot Password</Link>
-                  {/* <a href="../">Forgot Password</a> */}
+                  <Link to="/forgotPassword">Forgot Password</Link>
                 </div>
                 <div className={styles.change_to_signIn}>
                   <span>Didn't have an account? </span>
-                  <Link to="/">Sign up</Link>
+                  <Link to="/signUp">Sign up</Link>
                 </div>
               </div>
             </div>

@@ -19,14 +19,16 @@ function Login() {
               <img src={logo} alt="a" />
             </div>
             <div className={styles.btn_wrapper}>
-            <div className={styles.btn_wrapper_SignIn}>
-                <button className={styles.SignIn}>Sign In</button>
-                <Link to="../register"></Link>
-            </div>
+              <div className={styles.btn_wrapper_SignIn}>
+                <Link to="/signIn">
+                  <button className={styles.SignIn}>Sign In</button>
+                </Link>
+              </div>
             </div>
             <div className={styles.btn_wrapper_SignUp}>
-            <button className={styles.SignUp}>Sign Up</button>
-            <Link to="../register"></Link>
+              <Link to="/signUp">
+                <button className={styles.SignUp}>Sign Up</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 #wrapper {
   height: 800px;
@@ -71,7 +69,6 @@ label {
 .SignUp_input {
   width: 450px;
   height: 50px;
-  color: #ffffff;
   border: 1px solid #bf39d6;
   border-radius: 5px;
   margin-top: 15px;
