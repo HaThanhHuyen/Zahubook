@@ -1,0 +1,161 @@
+.HomePageLeft {
+  width: 24%;
+  /* height: 745px;
+  width: 200px; */
+  border-right: 1px solid #000000;
+  background: linear-gradient(#ffffff 0%, #c263cf 100%);
+}
+.logo {
+  margin: 0 auto;
+}
+.avt {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.control img {
+  width: 20%;
+}
+.More img {
+  width: 20%;
+}
+.More {
+  margin-left: 15%;
+  margin-top: 30%;
+}
+.control {
+  margin-top: 5%;
+  margin-left: 18%;
+}
+.control p {
+  margin-left: 25%;
+  margin-top: 5%;
+  color: #6a028f;
+}
+.Home,
+.Search,
+.Notification,
+.Createnews {
+  display: flex;
+  margin-bottom: 6%;
+  cursor: pointer;
+}
+.More p {
+  margin-left: 25%;
+  margin-top: 5%;
+  color: #6a028f;
+}
+.More {
+  display: flex;
+  cursor: pointer;
+}
+.HomePage {
+  display: flex;
+}
+.HomePageRight {
+  width: 76%;
+}
+.header {
+  display: flex;
+  background-color: #cac1d857;
+  height: 80px;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #000000;
+}
+.next {
+  width: 40px;
+  height: 40px;
+  margin-top: 2%;
+}
+.articleAvt{
+  display: flex;
+}
+.articleAvt p{
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 25px;
+}
+.articleAvt a{
+  margin-top: 4%;
+  margin-left: 1%;
+  font-size: 13px;
+}
+.artAvt{
+  width: 10%;
+}
+.star{
+  width: 2%;
+  height: 20px;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+.article{
+  margin-left: 10%;
+  margin-top: 1%;
+}
+.articleContent{
+  width: 91%;
+  margin-top: 2%;
+}
+.articleReaction{
+  width: 18%;
+  display: flex;
+  margin-top: 1%;
+}
+.heart {
+  width: 70%;
+  margin: 0 2% 0 2%;
+  cursor: pointer;
+}
+/* .heart :active{
+  background-color: #6a028f;
+
+} */
+.comment img{
+  margin: -4% 25%;
+  width: 66%;
+}
+.report img{
+  margin: -3% 25%;
+  width: 75%;
+}
+.title{
+  text-align: start;
+}
+.title h1{
+  margin: 0;
+  font-size: 25px;
+}
+.title p{
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.articleHeart p{
+  font-size: 10px;
+}
+.inputCmt input {
+  border: 1px solid #6a028f;
+  border-radius: 4px;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: start;
+}
+.inputCmt input:focus {
+  padding-left: 12px;
+  outline: none;
+  border-radius: 4px;
+}
+.inputCmt{
+  width: 70%;
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #6a028f;
+  display: flex;
+  align-items: center;
+}
+/* #heart{
+  background-color: #6a028f;
+} */

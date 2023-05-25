@@ -5,6 +5,7 @@ import SignUp from './pages/signUp/signUp';
 import SignIn from './pages/signIn/signIn'
 import ForgotPassword from './pages/forgotPassword/forgotPassword';
 import NewPassword from './pages/newPassword/newPassword';
+import HomePage from './pages/homePage/homePage';
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 
@@ -18,7 +19,7 @@ function App() {
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/newPassword" element={<NewPassword />} />
-
+        <Route path="/homePage" element={<HomePage />} />
       </Routes>
       {/* <ToastContainer position='top-right' /> */}
     </div>

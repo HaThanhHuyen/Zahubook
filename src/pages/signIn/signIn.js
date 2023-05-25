@@ -31,8 +31,8 @@ function SignIn() {
       password: password
     }).then(result => {
       console.log(result.data)
-      alert('success')
-      navigate('/');
+      // alert('success')
+      navigate('/homePage');
     })
       .catch(error => {
         alert('service error')
@@ -79,7 +79,7 @@ function SignIn() {
                     className={styles.submit}
                     onClick={handleApi}
                   >
-                    Create Account
+                    Sign In
                   </button>
                 </div>
                 <div className={styles.forgot_psw}>

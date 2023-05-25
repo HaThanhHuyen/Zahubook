@@ -1,4 +1,4 @@
-import logo from "../../images/zahubook.png";
+import logo from "../../images/zahubook1.png";
 import background from "../../images/miximeo.png";
 import styles from "../welcome/login.module.css";
 import { Link } from "react-router-dom";
