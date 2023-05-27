@@ -56,11 +56,14 @@
   width: 76%;
 }
 .header {
-  display: flex;
   background-color: #cac1d857;
   height: 80px;
   justify-content: space-evenly;
   border-bottom: 1px solid #000000;
+}
+.header img{
+  width: 20%;
+  height: 80px;
 }
 .next {
   width: 40px;
@@ -107,10 +110,7 @@
   margin: 0 2% 0 2%;
   cursor: pointer;
 }
-/* .heart :active{
-  background-color: #6a028f;
 
-} */
 .comment img{
   margin: -4% 25%;
   width: 66%;
@@ -156,6 +156,3 @@
   display: flex;
   align-items: center;
 }
-/* #heart{
-  background-color: #6a028f;
-} */

@@ -6,8 +6,10 @@ import SignIn from './pages/signIn/signIn'
 import ForgotPassword from './pages/forgotPassword/forgotPassword';
 import NewPassword from './pages/newPassword/newPassword';
 import HomePage from './pages/homePage/homePage';
+import SimpleSlider from './components/SimpleSlider';
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
+import HomeAdmin from './pages/homePage/homeAdmin';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/forgotPassword" element={<ForgotPassword />} />
         <Route path="/newPassword" element={<NewPassword />} />
         <Route path="/homePage" element={<HomePage />} />
+        <Route path="/simpleSlider" element={<SimpleSlider />} />
+        <Route path="/homeAdmin" element={<HomeAdmin />} />
       </Routes>
       {/* <ToastContainer position='top-right' /> */}
     </div>

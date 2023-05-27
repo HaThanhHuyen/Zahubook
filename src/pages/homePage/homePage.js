@@ -6,20 +6,15 @@ import Search from "../../images/search.png";
 import Notification from "../../images/message-circle.png";
 import Createnews from "../../images/plus-square.png";
 import menu from "../../images/menu.png";
-import avtonline1 from "../../images/Frame 20.png";
-import avtonline2 from "../../images/Frame 15.png";
-import avtonline3 from "../../images/Frame 17.png";
-import avtonline4 from "../../images/Frame 18.png";
-import avtonline5 from "../../images/Frame 19.png";
-import next from "../../images/Group 6.png";
 import artAvt from "../../images/Frame 14.png";
 import star from "../../images/Star 1.png";
 import content from "../../images/Rectangle 3.png";
 import heart from "../../images/Vector.png";
 import comment from "../../images/message-square.png";
 import report from "../../images/flag.png";
-import { BiSmile, BiSend, BiHeart } from "react-icons/bi";
-
+import { BiSmile, BiSend} from "react-icons/bi";
+import SimpleSlider from "../../components/SimpleSlider";
+import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <>
@@ -32,19 +27,19 @@ function HomePage() {
           <div className={styles.control}>
             <div className={styles.Home}>
               <img src={Home} alt="images" />
-              <p>Home</p>
+              <Link to="/"><p>Home</p></Link>
             </div>
             <div className={styles.Search}>
               <img src={Search} alt="images" />
-              <p>Search</p>
+              <Link to="/"><p>Search</p></Link>
             </div>
             <div className={styles.Notification}>
               <img src={Notification} alt="images" />
-              <p>Notification</p>
+              <Link to="/"><p>Notification</p></Link>
             </div>
             <div className={styles.Createnews}>
               <img src={Createnews} alt="images" />
-              <p>Create news</p>
+              <Link to="/"><p>Create news</p></Link>
             </div>
           </div>
           <div className={styles.More}>
@@ -54,12 +49,7 @@ function HomePage() {
         </div>
         <div className={styles.HomePageRight}>
           <div className={styles.header}>
-            <img src={avtonline1} alt="images" />
-            <img src={avtonline2} alt="images" />
-            <img src={avtonline3} alt="images" />
-            <img src={avtonline4} alt="images" />
-            <img src={avtonline5} alt="images" />
-            <img className={styles.next} src={next} alt="images" />
+            <SimpleSlider />
           </div>
           <div className={styles.article}>
             <div className={styles.articleAvt}>
@@ -75,7 +65,6 @@ function HomePage() {
               <div className={styles.articleReaction}>
                 <div className={styles.articleHeart}>
                   <img className={styles.heart} src={heart} alt="images" />
-                  {/* <BiHeart id={styles.heart}/> */}
                   <p>1Tr like</p>
                 </div>
                 <div className={styles.comment}>
