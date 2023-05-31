@@ -1,59 +1,17 @@
+.HomePage{
+  height: 100%;
+  width: 100%;
+}
 .HomePageLeft {
-  width: 24%;
-  /* height: 745px;
-  width: 200px; */
+  width: 25%;
   border-right: 1px solid #000000;
   background: linear-gradient(#ffffff 0%, #c263cf 100%);
 }
-.logo {
-  margin: 0 auto;
-}
-.avt {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 8%;
-}
-.control img {
-  width: 20%;
-}
-.More img {
-  width: 20%;
-}
-.More {
-  margin-left: 15%;
-  margin-top: 30%;
-}
-.control {
-  margin-top: 5%;
-  margin-left: 18%;
-}
-.control p {
-  margin-left: 25%;
-  margin-top: 5%;
-  color: #6a028f;
-}
-.Home,
-.Search,
-.Notification,
-.Createnews {
-  display: flex;
-  margin-bottom: 6%;
-  cursor: pointer;
-}
-.More p {
-  margin-left: 25%;
-  margin-top: 5%;
-  color: #6a028f;
-}
-.More {
-  display: flex;
-  cursor: pointer;
-}
-.HomePage {
+.HomePage { 
   display: flex;
 }
 .HomePageRight {
-  width: 76%;
+  width: 75%;
 }
 .header {
   background-color: #cac1d857;
@@ -105,19 +63,19 @@
   display: flex;
   margin-top: 1%;
 }
-.heart {
-  width: 70%;
-  margin: 0 2% 0 2%;
+
+.comment,
+.report,
+.heart{
   cursor: pointer;
 }
-
 .comment img{
-  margin: -4% 25%;
+  margin: 7% 25%;
   width: 66%;
 }
 .report img{
-  margin: -3% 25%;
-  width: 75%;
+  margin: 11% 25%;
+  width: 78%;
 }
 .title{
   text-align: start;
@@ -155,4 +113,7 @@
   box-shadow: 0 0 5px #6a028f;
   display: flex;
   align-items: center;
+}
+.articleContent img{
+  width: 100%;
 }

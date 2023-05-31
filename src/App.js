@@ -10,11 +10,12 @@ import SimpleSlider from './components/SimpleSlider';
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import HomeAdmin from './pages/homePage/homeAdmin';
+import Profile from './pages/profile/profile';
+import PageLeft from './pages/pageLeft/pageLeft';
 
 function App() {
   return (
     <div className="App">
-      <ToastContainer theme ='colored'></ToastContainer>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
@@ -24,8 +25,9 @@ function App() {
         <Route path="/homePage" element={<HomePage />} />
         <Route path="/simpleSlider" element={<SimpleSlider />} />
         <Route path="/homeAdmin" element={<HomeAdmin />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/pageLeft" element={<PageLeft />} />
       </Routes>
-      {/* <ToastContainer position='top-right' /> */}
     </div>
   );
 }

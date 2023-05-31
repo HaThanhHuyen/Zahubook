@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kaushan+Script&display=swap');
+/* .PageLeft {
+    border-right: 1px solid #000000;
+    background: linear-gradient(#ffffff 0%, #c263cf 100%);
+    width: 25%;
+    height: 100vh;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+} */
+.title_sidebar{
+    font-family: Kaushan Script;
+    padding: 10px ;
+    font-size: 60px;
+}
+
+.avt {
+    width: 150px;
+}
+.headerControl img{
+    cursor: pointer;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 30px 80px;  
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+.text_link {
+    text-decoration: none;
+}
+
+.more {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    padding: 0 80px;  
+}

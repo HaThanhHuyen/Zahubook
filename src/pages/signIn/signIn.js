@@ -45,7 +45,7 @@ function SignIn() {
         <div className={styles.rectangle}>
           <div className={styles.header}>
             <img src={logo1} alt="a" />
-            <h1>Welcome to Zahubook</h1>
+            <h1 className={styles.titleSign}>Welcome to Zahubook</h1>
           </div>
           <div className={styles.background}>
             <img src={background} alt="a" />

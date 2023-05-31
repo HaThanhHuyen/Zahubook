@@ -21,7 +21,9 @@ function HomeAdmin() {
         </div>
         <div className={styles.homeAdminRight}>
           <div className={styles.header}>
+          <div className={styles.repost}>
             <p>Repost</p>
+            </div>
             <div className={styles.logout}>
               <button>Log out</button>
               <img src={log} alt="images"/>

@@ -69,7 +69,7 @@ const SignUp = () => {
         <form className="container" onSubmit={handlesubmit}>
           <div className={styles.header}>
             <img src={logo1} alt="a" />
-            <h1>Welcome to Zahubook</h1>
+            <h1 className={styles.titleSignUp}>Welcome to Zahubook</h1>
           </div>
           <div className={styles.background}>
             <img src={background} alt="a" />
